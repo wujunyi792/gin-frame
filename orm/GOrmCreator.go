@@ -1,7 +1,7 @@
 package orm
 
 import (
-	"github.com/wujunyi792/StuBigData/logger"
+	"github.com/wujunyi792/ginFrame/logger"
 	"gorm.io/gorm"
 )
 

@@ -1,4 +1,4 @@
-module github.com/wujunyi792/StuBigData
+module github.com/wujunyi792/ginFrame
 
 go 1.16
 

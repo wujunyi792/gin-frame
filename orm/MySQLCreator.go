@@ -2,7 +2,7 @@ package orm
 
 import (
 	"fmt"
-	"github.com/wujunyi792/StuBigData/logger"
+	"github.com/wujunyi792/ginFrame/logger"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"strings"

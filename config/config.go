@@ -3,7 +3,7 @@ package config
 import (
 	"fmt"
 	"github.com/unknwon/goconfig"
-	"github.com/wujunyi792/StuBigData/logger"
+	"github.com/wujunyi792/ginFrame/logger"
 	"regexp"
 	"strconv"
 )

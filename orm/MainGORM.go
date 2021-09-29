@@ -2,8 +2,8 @@ package orm
 
 import (
 	"github.com/pelletier/go-toml"
-	"github.com/wujunyi792/StuBigData/config"
-	"github.com/wujunyi792/StuBigData/logger"
+	"github.com/wujunyi792/ginFrame/config"
+	"github.com/wujunyi792/ginFrame/logger"
 	"gorm.io/gorm"
 )
 
