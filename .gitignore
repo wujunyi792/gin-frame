@@ -1,0 +1,5 @@
+config/*.toml
+config/*.ini
+config/*.conf
+
+.idea

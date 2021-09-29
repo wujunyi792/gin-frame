@@ -1,0 +1,8 @@
+[User]
+[User.database]
+type = "mysql"
+address = "xx.xx.xx.xx:3306"
+dbName = "xxx"
+[User.database.auth]
+userName = "xxx"
+password = "xxx"

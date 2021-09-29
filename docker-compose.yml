@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  serve-main:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gin-frame-main
+#    restart: always
+    volumes:
+      - ./config:/Serve/config
+    ports:
+      - "12082:12082"
+    depends_on:
+      - redis-wechat
+    networks:
+      wechat-network:
+        ipv4_address: 172.31.0.4
+  serve-redis:
+    image: redis:latest
+    container_name: gin-frame-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./config/redis.conf:/usr/local/etc/redis/redis.conf:rw
+    networks:
+      wechat-network:
+        ipv4_address: 172.31.0.2
+
+networks:
+  wechat-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.31.0.0/16
